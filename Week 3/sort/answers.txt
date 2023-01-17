@@ -1,0 +1,15 @@
+sort1 uses: Bubble Sort
+
+How do you know?:
+It is much quicker than Selection Sort, when the numbers are already sorted.
+Because it only has to run through the list one time, and see that everything is in the right place.
+
+sort2 uses: Merge Sort
+
+How do you know?:
+It is much quicker on everything, pretty much.
+
+sort3 uses: Selection Sort
+
+How do you know?:
+Because i found the characteristics of the others.
