@@ -1,0 +1,62 @@
+.answer {
+  color: #0a58ca;
+}
+
+.hangman-game {
+  margin-top: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#word {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#incorrect-guesses {
+  color: red;
+}
+
+#hangman-image {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#guess-form {
+  font-size: 24px;
+  color: #0a58ca;
+  margin-top: 20px;
+}
+
+#guess-input {
+  border-radius: 5px;
+  background-color: #212529;
+  color: #0a58ca;
+  font-size: 24px;
+  padding: 5px;
+}
+
+#remaining-guesses {
+  color: #0a58ca;
+}
+
+#guess-button {
+  color: #0a58ca;
+  margin-top: 50px;
+  background-color: #212529;
+}
+
+#error {
+  color: red;
+}
+
+#restart-button {
+  color: red;
+  background-color: #212529;
+  margin: 70px;
+}

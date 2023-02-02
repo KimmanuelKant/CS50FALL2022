@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #7dcef3;
+}
+
+.game-body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #7dcef3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    background-color: #ffe84a;
+}
+
+.display-choice-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.display-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.display-result {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.choice-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.choice-button {
+    height: 250px;
+    background-color: #7dcef3;
+    border: none;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-button img {
+    height: 250px;
+    width: 250px;
+}
+
+.choice-button img:hover {
+    height: 300px;
+    width: 300px;
+}
+
+
