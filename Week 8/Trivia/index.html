@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+                // Check Multiple Choice Answers
+
+                // Add event listener to the one correct button
+                let correctAnswerMultipleChoice = document.querySelector('.correct');
+                correctAnswerMultipleChoice.addEventListener('click', function() { //when the correct button is clicked
+                    document.getElementById('answer').innerHTML = 'Correct!'; //change the answer to correct
+                    correctAnswerMultipleChoice.style.backgroundColor = 'green'; //change the background color to green
+                });
+                //Add event listener to the all incorrect buttons
+                let incorrectAnswerMultipleChoice = document.querySelectorAll('.incorrect'); //select all incorrect buttons
+                for (let i = 0; i < incorrectAnswerMultipleChoice.length; i++) { //for each incorrect button
+                    incorrectAnswerMultipleChoice[i].addEventListener('click', function() { //when the incorrect button is clicked
+                        document.getElementById('answer').innerHTML = 'Incorrect!'; //change the answer to incorrect
+                        incorrectAnswerMultipleChoice[i].style.backgroundColor = 'red'; //change the background color to red
+                    });
+                }
+                // Check Free Response Answers
+                let correctAnswer2 = 'Liverpool'
+                let submitButton = document.getElementById('submit');
+                let inputField = document.getElementById('answer2');
+                submitButton.addEventListener('click', function() {  //when the submit button is clicked
+                    let givenAnswer = document.getElementById('answer2').value; //get the given answer
+                    if (givenAnswer == correctAnswer2) { //if the given answer is correct
+                        submitButton.innerHTML = 'Correct!'; //change the answer to correct
+                        inputField.style.backgroundColor = 'green'; //change the background color to green
+
+                    }
+                    else {
+                        submitButton.innerHTML = 'Incorrect!'; //change the answer to incorrect
+                        inputField.style.backgroundColor = 'red'; //change the background color to red
+                    }
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3 class="question">
+                    Who was a Beatle?</label>
+                </h3>
+                <div class="answers">
+                    <button class="incorrect">Mao</button>
+                    <button class="incorrect">Lenin</button>
+                    <button class="incorrect">Castro</button>
+                    <button class="correct">Lennon</button>
+                  </div>
+                <p id="answer"> </p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3 class="question">Where are they from?</label>
+                <input type="text" id="answer2" name="answer2" placeholder="Enter your answer here"></input>
+                <button class="submit" id="submit">Check Answer</button>
+                </h3>
+            </div>
+        </div>
+    </body>
+</html>
